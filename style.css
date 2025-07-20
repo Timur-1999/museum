@@ -42,7 +42,7 @@ ul.menu_items{
     margin: 62px 0px;
     display: flex;
     justify-content: space-between;
-    gap: 55px;
+    gap: 53px;
 }
 .menu_item{
     display: inline-block;
@@ -55,9 +55,10 @@ ul.menu_items{
     line-height: normal;
     letter-spacing: 2px;
 }
-.Welcome {
+.welcome {
     background-color: black;
     height: 810px;
+    margin-bottom: 75px;
 }
 .main_block_img{
     position: relative;
@@ -70,7 +71,7 @@ ul.menu_items{
     top: 301px;
     z-index: 1;
 }
-.main_descr .title{
+.main_descr .welcome_title{
     font-family: 'Forum', serif;
     font-size: 80px;
     font-style: normal;
@@ -161,4 +162,80 @@ ul.menu_items{
     display: flex;
     justify-content: space-between;
     align-items:center;
+}
+.title{
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+.title_visiting{
+    color: #9D8665;
+}
+.title_line{
+    position: relative;
+    padding-bottom: 30px;
+}
+.title_line::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color:#710707;
+}
+.wrap_block_cards{
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    grid-template-rows: 424px 424px;
+    column-gap: 60px;
+    row-gap: 75px;
+}
+.wrap_block_card{
+    width: 440px;
+    height: 424px;
+}
+.subtitle_card{
+    padding-top: 22px;
+    padding-bottom: 12px;
+    color: #000;
+    font-family: Forum;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.subtitle_line{
+    position: relative;
+}
+.subtitle_line::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 2px;
+    background: #710707;
+}
+.descr_card{
+    color: #909090;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-top: 8px;
+}
+.descr_txt{
+    font-size: 22px;
+}
+.descr_subtxt{
+    margin-top: 10px;
+    font-size: 18px;
 }
