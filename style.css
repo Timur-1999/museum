@@ -3,6 +3,11 @@
     padding: 0;
     width: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 h1, h2, h3, ul, li{
     margin: 0;
     padding: 0;
@@ -55,7 +60,7 @@ ul.menu_items{
     line-height: normal;
     letter-spacing: 2px;
 }
-.welcome {
+.Welcome {
     background-color: black;
     height: 810px;
     margin-bottom: 75px;
@@ -163,6 +168,9 @@ ul.menu_items{
     justify-content: space-between;
     align-items:center;
 }
+.Visiting{
+    margin-bottom: 75px;
+}
 .title{
     font-family: Forum;
     font-size: 80px;
@@ -232,10 +240,77 @@ ul.menu_items{
     line-height: normal;
     margin-top: 8px;
 }
-.descr_txt{
+.descr_card .descr_txt{
     font-size: 22px;
 }
 .descr_subtxt{
     margin-top: 10px;
     font-size: 18px;
+}
+.Explore{
+    background-color:#030303;
+    padding: 75px 0px;
+    margin-bottom: 75px;
+}
+.explore_block{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.title_explore{
+    position: relative;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.title_explore::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -28px;
+    width: 100%;
+    height: 2px;
+    background: #710707;
+}
+.descr_explore{
+    padding-top: 30px;
+    width: 660px;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38.5px;
+}
+.descr_explore .descr_txt{
+    margin-bottom: 25px;
+}
+.descr_txt span{
+    color: #CAAA7D;
+}
+.explore_img{
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+}
+.explore_img::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 61%;
+    height: 700px;
+    background-color:#CAAA7D;
+    opacity: 0.3;
+}
+.explore_img .explore_slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 58.6%;
 }
